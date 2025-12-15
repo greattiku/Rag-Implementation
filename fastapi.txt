@@ -1,3 +1,0 @@
-FastAPI is a modern web framework for Python.
-It allows you to build APIs quickly and efficiently.
-RAG (Retrieval-Augmented Generation) uses embeddings and a vector database.
