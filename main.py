@@ -240,7 +240,7 @@ class QueryResult(BaseModel):
 
 # ---------- Endpoints ----------
 
-@app.get("/status")
+@app.get("/health")
 def status():
     return {
         "status": "ok",
@@ -418,7 +418,7 @@ async def upload_file(file: UploadFile = File(...)):
 
 
     
-@app.post("/prompt", response_model=QueryResult)
+@app.post("/chat", response_model=QueryResult)
 def query_rag(req: QueryRequest):
     """
     Query RAG:
